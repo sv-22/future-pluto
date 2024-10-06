@@ -12,7 +12,7 @@ void main() {
         rows: [],
         gridFocusNode: MockFocusNode(),
         scroll: MockPlutoGridScrollController(),
-        configuration: const PlutoGridConfiguration(
+        configuration: const PlutoGridConfiguration.dark(
           columnSize: PlutoGridColumnSizeConfig(
             autoSizeMode: PlutoAutoSizeMode.equal,
           ),
@@ -35,7 +35,7 @@ void main() {
         rows: [],
         gridFocusNode: MockFocusNode(),
         scroll: MockPlutoGridScrollController(),
-        configuration: const PlutoGridConfiguration(
+        configuration: const PlutoGridConfiguration.dark(
           columnSize: PlutoGridColumnSizeConfig(
             autoSizeMode: PlutoAutoSizeMode.none,
           ),
@@ -58,7 +58,7 @@ void main() {
         rows: [],
         gridFocusNode: MockFocusNode(),
         scroll: MockPlutoGridScrollController(),
-        configuration: const PlutoGridConfiguration(
+        configuration: const PlutoGridConfiguration.dark(
           columnSize: PlutoGridColumnSizeConfig(
             autoSizeMode: PlutoAutoSizeMode.equal,
           ),
@@ -81,7 +81,7 @@ void main() {
         rows: [],
         gridFocusNode: MockFocusNode(),
         scroll: MockPlutoGridScrollController(),
-        configuration: const PlutoGridConfiguration(
+        configuration: const PlutoGridConfiguration.dark(
           columnSize: PlutoGridColumnSizeConfig(
             autoSizeMode: PlutoAutoSizeMode.scale,
           ),
@@ -106,7 +106,7 @@ void main() {
         rows: [],
         gridFocusNode: MockFocusNode(),
         scroll: MockPlutoGridScrollController(),
-        configuration: const PlutoGridConfiguration(
+        configuration: const PlutoGridConfiguration.dark(
           columnSize: PlutoGridColumnSizeConfig(
             resizeMode: PlutoResizeMode.none,
           ),
@@ -130,7 +130,7 @@ void main() {
         rows: [],
         gridFocusNode: MockFocusNode(),
         scroll: MockPlutoGridScrollController(),
-        configuration: const PlutoGridConfiguration(
+        configuration: const PlutoGridConfiguration.dark(
           columnSize: PlutoGridColumnSizeConfig(
             resizeMode: PlutoResizeMode.normal,
           ),
@@ -154,7 +154,7 @@ void main() {
         rows: [],
         gridFocusNode: MockFocusNode(),
         scroll: MockPlutoGridScrollController(),
-        configuration: const PlutoGridConfiguration(
+        configuration: const PlutoGridConfiguration.dark(
           columnSize: PlutoGridColumnSizeConfig(
             resizeMode: PlutoResizeMode.normal,
           ),

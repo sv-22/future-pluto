@@ -56,7 +56,7 @@ void main() {
   }
 
   buildGrid(
-    configuration: const PlutoGridConfiguration(
+    configuration: const PlutoGridConfiguration.dark(
       enableMoveDownAfterSelecting: true,
     ),
   ).test(

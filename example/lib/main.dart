@@ -12,9 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'PlutoGrid Example',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData.dark(),
       home: const PlutoGridExamplePage(),
     );
   }
@@ -158,7 +156,7 @@ class _PlutoGridExamplePageState extends State<PlutoGridExamplePage> {
           onChanged: (PlutoGridOnChangedEvent event) {
             print(event);
           },
-          configuration: const PlutoGridConfiguration(),
+          configuration: const PlutoGridConfiguration.dark(),
         ),
       ),
     );

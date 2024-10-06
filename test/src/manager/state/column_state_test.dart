@@ -897,7 +897,7 @@ void main() {
         rows: [],
         gridFocusNode: null,
         scroll: scroll,
-        configuration: const PlutoGridConfiguration(
+        configuration: const PlutoGridConfiguration.dark(
           columnSize: PlutoGridColumnSizeConfig(
             autoSizeMode: PlutoAutoSizeMode.equal,
             restoreAutoSizeAfterFrozenColumn: false,
@@ -1038,7 +1038,7 @@ void main() {
         rows: [],
         gridFocusNode: null,
         scroll: scroll,
-        configuration: const PlutoGridConfiguration(
+        configuration: const PlutoGridConfiguration.dark(
           columnSize: PlutoGridColumnSizeConfig(
             autoSizeMode: PlutoAutoSizeMode.equal,
             restoreAutoSizeAfterInsertColumn: false,
@@ -1318,7 +1318,7 @@ void main() {
         rows: [],
         gridFocusNode: null,
         scroll: scroll,
-        configuration: const PlutoGridConfiguration(
+        configuration: const PlutoGridConfiguration.dark(
           columnSize: PlutoGridColumnSizeConfig(
             autoSizeMode: PlutoAutoSizeMode.equal,
             restoreAutoSizeAfterRemoveColumn: false,
@@ -1530,7 +1530,7 @@ void main() {
         rows: [],
         gridFocusNode: null,
         scroll: scroll,
-        configuration: const PlutoGridConfiguration(
+        configuration: const PlutoGridConfiguration.dark(
           columnSize: PlutoGridColumnSizeConfig(
             autoSizeMode: PlutoAutoSizeMode.equal,
             restoreAutoSizeAfterMoveColumn: false,
@@ -1564,7 +1564,7 @@ void main() {
           rows: [],
           gridFocusNode: null,
           scroll: scroll,
-          configuration: const PlutoGridConfiguration(
+          configuration: const PlutoGridConfiguration.dark(
             columnSize: PlutoGridColumnSizeConfig(
               resizeMode: PlutoResizeMode.none,
             ),
@@ -1596,7 +1596,7 @@ void main() {
           rows: [],
           gridFocusNode: null,
           scroll: scroll,
-          configuration: const PlutoGridConfiguration(
+          configuration: const PlutoGridConfiguration.dark(
             columnSize: PlutoGridColumnSizeConfig(
               resizeMode: PlutoResizeMode.normal,
             ),
@@ -1626,7 +1626,7 @@ void main() {
           rows: [],
           gridFocusNode: null,
           scroll: scroll,
-          configuration: const PlutoGridConfiguration(
+          configuration: const PlutoGridConfiguration.dark(
             columnSize: PlutoGridColumnSizeConfig(
               resizeMode: PlutoResizeMode.normal,
             ),
@@ -1660,7 +1660,7 @@ void main() {
             rows: [],
             gridFocusNode: null,
             scroll: scroll,
-            configuration: const PlutoGridConfiguration(
+            configuration: const PlutoGridConfiguration.dark(
               columnSize: PlutoGridColumnSizeConfig(
                 resizeMode: PlutoResizeMode.pushAndPull,
               ),

@@ -1,47 +1,40 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:pluto_grid/pluto_grid.dart';
 
 import 'constants/pluto_grid_example_colors.dart';
 import 'screen/development_screen.dart';
 import 'screen/empty_screen.dart';
-import 'screen/feature/add_and_remove_column_row_screen.dart';
-import 'screen/feature/add_rows_asynchronously.dart';
-import 'screen/feature/cell_renderer_screen.dart';
-import 'screen/feature/cell_selection_screen.dart';
-import 'screen/feature/column_filtering_screen.dart';
-import 'screen/feature/column_footer_screen.dart';
-import 'screen/feature/column_freezing_screen.dart';
-import 'screen/feature/column_group_screen.dart';
-import 'screen/feature/column_hiding_screen.dart';
-import 'screen/feature/column_menu_screen.dart';
-import 'screen/feature/column_moving_screen.dart';
-import 'screen/feature/column_resizing_screen.dart';
-import 'screen/feature/column_sorting_screen.dart';
-import 'screen/feature/copy_and_paste_screen.dart';
-import 'screen/feature/currency_type_column_screen.dart';
-import 'screen/feature/dark_mode_screen.dart';
-import 'screen/feature/date_type_column_screen.dart';
-import 'screen/feature/dual_mode_screen.dart';
-import 'screen/feature/editing_state_screen.dart';
-import 'screen/feature/export_screen.dart';
-import 'screen/feature/grid_as_popup_screen.dart';
-import 'screen/feature/listing_mode_screen.dart';
-import 'screen/feature/moving_screen.dart';
-import 'screen/feature/number_type_column_screen.dart';
-import 'screen/feature/row_color_screen.dart';
-import 'screen/feature/row_group_screen.dart';
-import 'screen/feature/row_infinity_scroll_screen.dart';
-import 'screen/feature/row_lazy_pagination_screen.dart';
-import 'screen/feature/row_moving_screen.dart';
-import 'screen/feature/row_pagination_screen.dart';
-import 'screen/feature/row_selection_screen.dart';
-import 'screen/feature/row_with_checkbox_screen.dart';
-import 'screen/feature/rtl_screen.dart';
-import 'screen/feature/selection_type_column_screen.dart';
-import 'screen/feature/text_type_column_screen.dart';
-import 'screen/feature/time_type_column_screen.dart';
-import 'screen/feature/value_formatter_screen.dart';
+import 'screen/feature/index.dart';
 import 'screen/home_screen.dart';
+
+PlutoGridConfiguration buildPlutoConfig({
+  bool enableMoveDownAfterSelecting = false,
+  bool enableMoveHorizontalInEditing = false,
+  PlutoGridEnterKeyAction enterKeyAction =
+      PlutoGridEnterKeyAction.editingAndMoveDown,
+  PlutoGridTabKeyAction tabKeyAction = PlutoGridTabKeyAction.normal,
+  PlutoGridShortcut shortcut = const PlutoGridShortcut(),
+  PlutoGridStyleConfig? style,
+  PlutoGridScrollbarConfig scrollbar = const PlutoGridScrollbarConfig(),
+  PlutoGridColumnFilterConfig columnFilter =
+      const PlutoGridColumnFilterConfig(),
+  PlutoGridColumnSizeConfig columnSize = const PlutoGridColumnSizeConfig(),
+  PlutoGridLocaleText localeText = const PlutoGridLocaleText(),
+}) {
+  return PlutoGridConfiguration(
+    enableMoveDownAfterSelecting: enableMoveDownAfterSelecting,
+    enableMoveHorizontalInEditing: enableMoveHorizontalInEditing,
+    enterKeyAction: enterKeyAction,
+    tabKeyAction: tabKeyAction,
+    shortcut: shortcut,
+    style: style ?? const PlutoGridStyleConfig.dark(),
+    scrollbar: scrollbar,
+    columnFilter: columnFilter,
+    columnSize: columnSize,
+    localeText: localeText,
+  );
+}
 
 void main() {
   runApp(const MyApp());
@@ -113,15 +106,7 @@ class MyApp extends StatelessWidget {
         EmptyScreen.routeName: (context) => const EmptyScreen(),
         DevelopmentScreen.routeName: (context) => const DevelopmentScreen(),
       },
-      theme: ThemeData(
-        primaryColor: PlutoGridExampleColors.primaryColor,
-        fontFamily: 'OpenSans',
-        scaffoldBackgroundColor: PlutoGridExampleColors.backgroundColor,
-        colorScheme: const ColorScheme.light(
-          primary: PlutoGridExampleColors.primaryColor,
-          background: PlutoGridExampleColors.backgroundColor,
-        ),
-      ),
+      theme: ThemeData.dark(),
     );
   }
 }

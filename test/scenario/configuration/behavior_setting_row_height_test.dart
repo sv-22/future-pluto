@@ -44,7 +44,7 @@ void main() {
                     rowIdx,
                   );
                 },
-                configuration: PlutoGridConfiguration(
+                configuration: PlutoGridConfiguration.dark(
                   style: PlutoGridStyleConfig(
                     rowHeight: rowHeight,
                   ),

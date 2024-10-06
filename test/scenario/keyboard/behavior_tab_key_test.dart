@@ -39,7 +39,7 @@ void main() {
                   onLoaded: (PlutoGridOnLoadedEvent event) {
                     stateManager = event.stateManager;
                   },
-                  configuration: const PlutoGridConfiguration(
+                  configuration: const PlutoGridConfiguration.dark(
                     tabKeyAction: PlutoGridTabKeyAction.moveToNextOnEdge,
                   ),
                 ),
@@ -128,7 +128,7 @@ void main() {
                   onLoaded: (PlutoGridOnLoadedEvent event) {
                     stateManager = event.stateManager;
                   },
-                  configuration: const PlutoGridConfiguration(
+                  configuration: const PlutoGridConfiguration.dark(
                     tabKeyAction: PlutoGridTabKeyAction.moveToNextOnEdge,
                   ),
                 ),

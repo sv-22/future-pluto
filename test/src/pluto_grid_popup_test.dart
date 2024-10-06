@@ -514,7 +514,7 @@ void main() {
       tester: tester,
       columns: columns,
       rows: rows,
-      configuration: const PlutoGridConfiguration(
+      configuration: const PlutoGridConfiguration.dark(
           style: PlutoGridStyleConfig(
         enableRowColorAnimation: true,
       )),

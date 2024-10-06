@@ -35,7 +35,7 @@ void main() {
                   onLoaded: (PlutoGridOnLoadedEvent event) {
                     stateManager = event.stateManager;
                   },
-                  configuration: PlutoGridConfiguration(
+                  configuration: PlutoGridConfiguration.dark(
                     enterKeyAction: enterKeyAction,
                   ),
                 ),

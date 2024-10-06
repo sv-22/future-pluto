@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pluto_grid/pluto_grid.dart';
 
 import '../dummy_data/development.dart';
+import '../main.dart';
 
 class EmptyScreen extends StatefulWidget {
   static const routeName = 'empty';
@@ -59,7 +60,7 @@ class _EmptyScreenState extends State<EmptyScreen> {
             onLoaded: (PlutoGridOnLoadedEvent event) {
               stateManager = event.stateManager;
             },
-            configuration: const PlutoGridConfiguration(),
+            configuration: buildPlutoConfig(),
           ),
         ),
       ),

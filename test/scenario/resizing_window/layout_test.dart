@@ -155,7 +155,7 @@ void main() {
       await tester.pumpWidget(buildGrid(
         columns: columns,
         rows: rows,
-        configuration: const PlutoGridConfiguration(
+        configuration: const PlutoGridConfiguration.dark(
           columnSize: PlutoGridColumnSizeConfig(
             autoSizeMode: PlutoAutoSizeMode.equal,
           ),
@@ -211,7 +211,7 @@ void main() {
       await tester.pumpWidget(buildGrid(
         columns: columns,
         rows: rows,
-        configuration: const PlutoGridConfiguration(
+        configuration: const PlutoGridConfiguration.dark(
           columnSize: PlutoGridColumnSizeConfig(
             autoSizeMode: PlutoAutoSizeMode.equal,
           ),
@@ -267,7 +267,7 @@ void main() {
       await tester.pumpWidget(buildGrid(
         columns: columns,
         rows: rows,
-        configuration: const PlutoGridConfiguration(
+        configuration: const PlutoGridConfiguration.dark(
           columnSize: PlutoGridColumnSizeConfig(
             autoSizeMode: PlutoAutoSizeMode.equal,
           ),
@@ -323,7 +323,7 @@ void main() {
       await tester.pumpWidget(buildGrid(
         columns: columns,
         rows: rows,
-        configuration: const PlutoGridConfiguration(
+        configuration: const PlutoGridConfiguration.dark(
           columnSize: PlutoGridColumnSizeConfig(
             autoSizeMode: PlutoAutoSizeMode.scale,
           ),
@@ -379,7 +379,7 @@ void main() {
       await tester.pumpWidget(buildGrid(
         columns: columns,
         rows: rows,
-        configuration: const PlutoGridConfiguration(
+        configuration: const PlutoGridConfiguration.dark(
           columnSize: PlutoGridColumnSizeConfig(
             autoSizeMode: PlutoAutoSizeMode.scale,
           ),
@@ -435,7 +435,7 @@ void main() {
       await tester.pumpWidget(buildGrid(
         columns: columns,
         rows: rows,
-        configuration: const PlutoGridConfiguration(
+        configuration: const PlutoGridConfiguration.dark(
           columnSize: PlutoGridColumnSizeConfig(
             autoSizeMode: PlutoAutoSizeMode.scale,
           ),

@@ -45,7 +45,7 @@ void main() {
             onLoaded: (PlutoGridOnLoadedEvent event) {
               stateManager = event.stateManager;
             },
-            configuration: PlutoGridConfiguration(shortcut: shortcut),
+            configuration: PlutoGridConfiguration.dark(shortcut: shortcut),
           ),
         ),
       ),

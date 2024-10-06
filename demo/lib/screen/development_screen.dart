@@ -1,10 +1,11 @@
-import 'package:faker/faker.dart';
+import 'package:faker/faker.dart' as fkr;
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:pluto_grid/pluto_grid.dart';
 import 'package:pluto_menu_bar/pluto_menu_bar.dart';
 
 import '../dummy_data/development.dart';
+import '../main.dart';
 import 'home_screen.dart';
 
 enum _Test {
@@ -43,7 +44,7 @@ class _DevelopmentScreenState extends State<DevelopmentScreen> {
 
   PlutoGridMode _gridMode = PlutoGridMode.normal;
 
-  PlutoGridConfiguration _configuration = PlutoGridConfiguration(
+  PlutoGridConfiguration _configuration = buildPlutoConfig(
     tabKeyAction: PlutoGridTabKeyAction.moveToNextOnEdge,
     // columnHeight: 30.0,
     // columnFilterHeight: 30.0,
@@ -129,9 +130,9 @@ class _DevelopmentScreenState extends State<DevelopmentScreen> {
       columnGroups.addAll(testColumnGroupsA);
       rows.addAll(DummyData.rowsByColumns(length: 10000, columns: columns));
       rowColorCallback = (PlutoRowColorContext rowColorContext) {
-        return rowColorContext.row.cells['column2']?.value == 'green'
+        return (rowColorContext.row.cells['column2']?.value == 'green'
             ? const Color(0xFFE2F6DF)
-            : Colors.white;
+            : Colors.white) as Color;
       };
     }
 
@@ -439,7 +440,7 @@ class _HeaderState extends State<_Header> {
       0,
       [
         PlutoColumn(
-          title: faker.food.cuisine(),
+          title: fkr.faker.food.cuisine(),
           field: 'new_${DateTime.now()}',
           type: PlutoColumnType.text(),
           frozen: frozen,
@@ -1023,7 +1024,7 @@ final testColumnsA = [
       enableColumnFilter: true,
     ),
     renderer: (rendererContext) {
-      Color textColor = Colors.black;
+      var textColor = Colors.black;
 
       if (rendererContext.cell.value == 'red') {
         textColor = Colors.red;

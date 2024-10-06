@@ -633,7 +633,7 @@ void main() {
           () {
             FilterPopupState(
               context: MockBuildContext(),
-              configuration: const PlutoGridConfiguration(),
+              configuration: const PlutoGridConfiguration.dark(),
               handleAddNewFilter: (_) {},
               handleApplyFilter: (_) {},
               columns: [],
@@ -654,7 +654,7 @@ void main() {
 
           var filterPopupState = FilterPopupState(
             context: MockBuildContext(),
-            configuration: const PlutoGridConfiguration(),
+            configuration: const PlutoGridConfiguration.dark(),
             handleAddNewFilter: (_) {},
             handleApplyFilter: (_) {},
             columns: ColumnHelper.textColumn('column'),
@@ -690,7 +690,7 @@ void main() {
 
           var filterPopupState = FilterPopupState(
             context: MockBuildContext(),
-            configuration: const PlutoGridConfiguration(),
+            configuration: const PlutoGridConfiguration.dark(),
             handleAddNewFilter: (_) {},
             handleApplyFilter: (_) {},
             columns: columns,
@@ -737,7 +737,7 @@ void main() {
 
       var filterPopupState = FilterPopupState(
         context: MockBuildContext(),
-        configuration: const PlutoGridConfiguration(),
+        configuration: const PlutoGridConfiguration.dark(),
         handleAddNewFilter: (_) {},
         handleApplyFilter: mock.oneParamReturnVoid,
         columns: columns,
@@ -760,7 +760,7 @@ void main() {
 
       var filterPopupState = FilterPopupState(
         context: MockBuildContext(),
-        configuration: const PlutoGridConfiguration(),
+        configuration: const PlutoGridConfiguration.dark(),
         handleAddNewFilter: (_) {},
         handleApplyFilter: (_) {},
         columns: ColumnHelper.textColumn('column'),
@@ -793,7 +793,7 @@ void main() {
 
         var filterPopupState = FilterPopupState(
           context: MockBuildContext(),
-          configuration: const PlutoGridConfiguration(),
+          configuration: const PlutoGridConfiguration.dark(),
           handleAddNewFilter: (_) {},
           handleApplyFilter: mock.oneParamReturnVoid,
           columns: columns,
@@ -821,7 +821,7 @@ void main() {
 
         var filterPopupState = FilterPopupState(
           context: MockBuildContext(),
-          configuration: const PlutoGridConfiguration(),
+          configuration: const PlutoGridConfiguration.dark(),
           handleAddNewFilter: (_) {},
           handleApplyFilter: mock.oneParamReturnVoid,
           columns: columns,
